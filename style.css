@@ -141,7 +141,5 @@ p {
 }
 
 ::selection {
-  color:#fff;
-  text-shadow:1px 1px 10px #fff, 1px 1px 10px #2795f5;
-  text-align:center;
+background: red;
 }
