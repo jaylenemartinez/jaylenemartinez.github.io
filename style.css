@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Cochin';
+  src: url('path/to/cochin-regular.ttf') format('truetype');
+  /* Add other font formats if necessary (e.g., woff, woff2) */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Charm';
+  src: url('path/to/charm-regular.ttf') format('truetype');
+  /* Add other font formats if necessary (e.g., woff, woff2) */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+
+}
+
+.container {
+  height: 100vh;
+  margin: 8%;
+  margin-top: 0%;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -5%;
+}
+
+video {
+  width: 60%;
+  height: 60%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  color: aliceblue;
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
+
+.phonetic-text {
+  margin-top: 40px;
+  animation: none;
+  font-style: italic;
+}
+
+.welcome-text {
+  margin: 0%;
+}
+
+
+.intro-container {
+  display: flex;
+  /* Add this line to make the children of .intro-container flex items */
+  margin: 8%;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  flex: 1;
+  align-items: center;
+}
+
+.subtext-heading,
+.title {
+  margin: 0; /* Remove the default margin */
+}
+
+.subtext-heading {
+  color: #FFF;
+  font-family: 'Cochin';
+  font-size: 50px;
+  margin-right: 20px; /* Add margin between subheading and title */
+  margin-bottom: 5%;
+}
+
+.title {
+  color: #FFF;
+  font-family: 'Monospace';
+  font-size: 90px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 90px;
+}
+
+
+.profile-picture {
+  position: relative;
+  margin: 0 auto;
+  margin-left: 40px;
+  margin-right: 20px;
+  width: 482px;
+  min-width: 482px;
+  height: 556px;
+  overflow: hidden;
+  background: url('images/profilefrbnw.png');
+  transition: filter 1s ease; /* Smooth transition for the filter property */
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
+
+.title.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
