@@ -130,7 +130,7 @@ p {
   min-width: 482px;
   height: 556px;
   overflow: hidden;
-  background: url('images/profilefrbnw.png');
+  background: url('images/grayscale-profile-gradient.png');
   transition: filter 1s ease;
   /* Smooth transition for the filter property */
   animation: fade linear both;
