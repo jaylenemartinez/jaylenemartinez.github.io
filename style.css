@@ -187,7 +187,7 @@ p {
   min-width: 482px;
   height: 556px;
   overflow: hidden;
-  background: url('images/profilefr.png');
+  background: url('images/profilecolorfr.png');
   transition: filter 1s ease;
   /* Smooth transition for the filter property */
   -webkit-animation: fade linear both;
@@ -259,4 +259,8 @@ p {
   width: 50%;
   padding-top: 15%;
   margin: 0;
+}
+
+.in-container {
+  margin-top: 20%;
 }
