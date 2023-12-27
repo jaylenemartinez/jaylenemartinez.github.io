@@ -52,7 +52,7 @@ html {
   padding: 0;
   height: 100%;
   background-color: black;
-  overflow: hidden;
+  overflow-x: hidden;
   max-width: 100vw;
 }
 
@@ -142,7 +142,7 @@ p {
 .subtext-heading {
   color: #FFF;
   font-family: 'Cochin';
-  font-size: 50px;
+  font-size: 40px;
   margin-right: 20px;
   /* Add margin between subheading and title */
   margin-bottom: 5%;
@@ -170,8 +170,9 @@ p {
 }
 
 .c.title {
-  font-family: 'Grandstander';
-  font-size: 120px;
+  /* font-family: 'Grandstander'; */
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 100px;
 }
 
 .b.title {
@@ -183,11 +184,12 @@ p {
 .profile-picture {
   position: relative;
   margin: 0 auto;
+  margin-right: 5%;
   width: 482px;
   min-width: 482px;
   height: 556px;
   overflow: hidden;
-  background: url('images/profilecolorfr.png');
+  background: url('images/profilewithbackground3.png');
   transition: filter 1s ease;
   /* Smooth transition for the filter property */
   -webkit-animation: fade linear both;
@@ -222,7 +224,8 @@ p {
 
 /* change color to see */
 .carousel>.item:nth-child(odd) {
-  background: black;
+  background: rgb(0, 0, 0);
+  padding-top: 10px;
 }
 
 /* change color to see */
