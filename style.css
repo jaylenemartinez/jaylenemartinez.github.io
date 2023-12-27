@@ -76,6 +76,7 @@ p {
   margin-top: 40px;
   animation: none;
   font-style: italic;
+  font-size: smaller;
 }
 
 .welcome-text {
@@ -98,17 +99,16 @@ p {
 }
 
 .subtext-heading {
-  margin: 0;
-  /* Remove the default margin */
-}
-
-.subtext-heading {
   color: #FFF;
   font-family: 'Cochin';
   font-size: 50px;
   margin-right: 20px;
   /* Add margin between subheading and title */
   margin-bottom: 5%;
+  -webkit-animation: fade linear both;
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
 }
 
 .title {
@@ -118,6 +118,10 @@ p {
   font-style: normal;
   font-weight: bold;
   line-height: 90px;
+  -webkit-animation: fade linear both;
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
 }
 
 
@@ -150,6 +154,10 @@ p {
   overflow-x: auto;
   color: white;
   background-color: yellow;
+  -webkit-animation: fade linear both;
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
 }
 
 .carousel>.item {
