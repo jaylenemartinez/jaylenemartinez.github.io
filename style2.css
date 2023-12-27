@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'Cochin';
+    src: url('path/to/cochin-regular.ttf') format('truetype');
+    /* Add other font formats if necessary (e.g., woff, woff2) */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Charm';
+    src: url('path/to/charm-regular.ttf') format('truetype');
+    /* Add other font formats if necessary (e.g., woff, woff2) */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gemunu';
+    src: url('fonts/GemunuLibre-VariableFont_wght.ttf') format('truetype');
+    /* Add other font formats if necessary (e.g., woff, woff2) */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Grandstander';
+    src: url('fonts/Grandstander-VariableFont_wght.ttf') format('truetype');
+    /* Add other font formats if necessary (e.g., woff, woff2) */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'East';
+    src: url('fonts/EastSeaDokdo-Regular.ttf') format('truetype');
+    /* Add other font formats if necessary (e.g., woff, woff2) */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gothic';
+    src: url('fonts/DotGothic16-Regular.ttf') format('truetype');
+    /* Add other font formats if necessary (e.g., woff, woff2) */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    height: 100vh;
+    margin: 8%;
+    margin-top: 0%;
+  }
+  
+  .landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -5%;
+  }
+  
+  video {
+    width: 60%;
+    height: 60%;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes cfade {
+    from {
+      opacity: 0.5;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
+    color: aliceblue;
+    -webkit-animation: fade linear both;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+  }
+  
+  .phonetic-text {
+    margin-top: 40px;
+    animation: none;
+    font-style: italic;
+    font-size: smaller;
+  }
+  
+  .welcome-text {
+    margin: 0%;
+  }
+  
+  
+  .intro-container {
+    display: flex;
+    /* Add this line to make the children of .intro-container flex items */
+    margin: 8%;
+    margin-left: 35%;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel {
+    flex: 1;
+    align-items: center;
+  }
+  
+  .subtext-heading {
+    color: #FFF;
+    font-family: 'Cochin';
+    font-size: 40px;
+    margin-right: 20px;
+    /* Add margin between subheading and title */
+    margin-bottom: 2%;
+    -webkit-animation: fade linear both;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+  }
+  
+  .title {
+    color: #FFF;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 90px;
+    -webkit-animation: fade linear both;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+  }
+  
+  .a.title {
+    font-family: 'Gothic';
+    font-size: 100px;
+  }
+  
+  .c.title {
+    /* font-family: 'Grandstander'; */
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 100px;
+  }
+  
+  .b.title {
+    font-family: 'East';
+    font-size: 180px;
+  }
+  
+  
+  .profile-picture {
+    position: relative;
+    margin: 0 auto;
+    margin-right: 7%;
+    margin-left: 50px;
+    width: 482px;
+    min-width: 482px;
+    height: 556px;
+    overflow: hidden;
+    background: url('images/profilewithbackground3.png');
+    transition: filter 1s ease;
+    /* Smooth transition for the filter property */
+    -webkit-animation: fade linear both;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+  }
+  
+  ::selection {
+    color: #fff;
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+    text-align: center;
+  }
+  
+  
+  .carousel {
+    display: flex;
+    width: 100vw;
+    overflow-x: auto;
+    color: white;
+    background-color: yellow;
+    -webkit-animation: fade linear both;
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: exit 50% cover 50%;
+  }
+  
+  .carousel>.item {
+    flex: 1 0 33.33%;
+    margin-right: 5px;
+  }
+  
+  /* change color to see */
+  .carousel>.item:nth-child(odd) {
+    background: rgb(0, 0, 0);
+    padding-top: 10px;
+  }
+  
+  /* change color to see */
+  .carousel>.item:nth-child(even) {
+    background: black;
+  }
+  
+  .carousel>.item,
+  .carousel>.item.multiple>div {
+    height: 300px;
+  }
+  
+  .carousel>.item.multiple {
+    position: relative;
+    overflow-y: auto;
+  }
+  
+  .carousel>.item.multiple>div {
+    position: absolute;
+    width: 100px;
+  }
+  
+  .carousel>.item.multiple>div:nth-child(2) {
+    top: 700px;
+  }
+  
+  .carousel>.item.multiple>div:nth-child(3) {
+    top: 400px;
+  }
+  
+  
+  .title-container {
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    margin-left: -100px;
+    margin-top: 10%;
+  }
+  
+  .in-container {
+    margin-top: 20%;
+  }
+  
+  .slide-container {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .slides {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #fff;
+    scroll-snap-align: start;
+  }
