@@ -92,13 +92,12 @@ p {
   align-items: center;
 }
 
-.intro-text {
+.carousel {
   flex: 1;
   align-items: center;
 }
 
-.subtext-heading,
-.title {
+.subtext-heading {
   margin: 0;
   /* Remove the default margin */
 }
@@ -125,13 +124,11 @@ p {
 .profile-picture {
   position: relative;
   margin: 0 auto;
-  margin-left: 40px;
-  margin-right: 20px;
   width: 482px;
   min-width: 482px;
   height: 556px;
   overflow: hidden;
-  background: url('images/grayscale-profile-gradient.png');
+  background: url('images/profilefr.png');
   transition: filter 1s ease;
   /* Smooth transition for the filter property */
   -webkit-animation: fade linear both;
@@ -144,4 +141,57 @@ p {
   color: #fff;
   text-shadow: 1px 1px 10px #fff, 1px 1px 10px #2795f5;
   text-align: center;
+}
+
+
+.carousel {
+  display: flex;
+  width: 100vw;
+  overflow-x: auto;
+  color: white;
+  background-color: yellow;
+}
+
+.carousel>.item {
+  flex: 1 0 33.33%;
+  margin-right: 5px;
+}
+
+/* change color to see */
+.carousel>.item:nth-child(odd) {
+  background: black;
+}
+
+/* change color to see */
+.carousel>.item:nth-child(even) {
+  background: black;
+}
+
+.carousel>.item,
+.carousel>.item.multiple>div {
+  height: 300px;
+}
+
+.carousel>.item.multiple {
+  position: relative;
+  overflow-y: auto;
+}
+
+.carousel>.item.multiple>div {
+  position: absolute;
+  width: 100px;
+}
+
+.carousel>.item.multiple>div:nth-child(2) {
+  top: 700px;
+}
+
+.carousel>.item.multiple>div:nth-child(3) {
+  top: 400px;
+}
+
+
+.title-container {
+  background-color: black;
+  width: 50%;
 }
