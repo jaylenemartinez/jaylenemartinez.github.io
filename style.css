@@ -53,6 +53,8 @@ html {
   height: 100%;
   background-color: black;
   overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
   max-width: 100vw;
   box-sizing: border-box;
 }
@@ -130,6 +132,7 @@ p {
   display: flex;
   /* Add this line to make the children of .intro-container flex items */
   margin: 8%;
+  margin-left: 35%;
   padding: 2%;
   justify-content: center;
   align-items: center;
@@ -146,7 +149,7 @@ p {
   font-size: 40px;
   margin-right: 20px;
   /* Add margin between subheading and title */
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   -webkit-animation: fade linear both;
   animation: fade linear both;
   animation-timeline: view();
@@ -185,7 +188,8 @@ p {
 .profile-picture {
   position: relative;
   margin: 0 auto;
-  margin-right: 5%;
+  margin-right: 7%;
+  margin-left: 50px;
   width: 482px;
   min-width: 482px;
   height: 556px;
@@ -261,10 +265,26 @@ p {
 .title-container {
   background-color: rgb(0, 0, 0);
   width: 50%;
-  padding-top: 15%;
-  margin: 0;
+  margin-left: -100px;
+  margin-top: 10%;
 }
 
 .in-container {
   margin-top: 20%;
+}
+
+.slide-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.slides {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  color: #fff;
+  scroll-snap-align: start;
 }
