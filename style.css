@@ -54,6 +54,7 @@ html {
   background-color: black;
   overflow-x: hidden;
   max-width: 100vw;
+  box-sizing: border-box;
 }
 
 .container {
