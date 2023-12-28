@@ -98,3 +98,10 @@ for (var i = 0; i < imageSources.length; i++) {
     checkAllImagesLoaded();
   });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var video = document.querySelector('video');
+  video.addEventListener('mouseenter', function() {
+    video.load();
+  });
+});
