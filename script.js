@@ -56,3 +56,45 @@ $(document).ready(function() {
   );
 });
 
+function loadImageAsync(src, callback) {
+  var img = new Image();
+  img.onload = function() {
+    callback(null, img);
+  };
+  img.onerror = function() {
+    callback('Error loading image: ' + src);
+  };
+  img.src = src;
+}
+
+// An array of image sources to load asynchronously
+var imageSources = [
+  'images/graphicdesignprofile.png',
+  'images/artistprofile6.png',
+  'images/normalprofile.png',
+  'images/softwareprofile.png',
+];
+
+// Load all images asynchronously
+var loadedImages = [];
+var imagesLoaded = 0;
+
+function checkAllImagesLoaded() {
+  imagesLoaded++;
+  if (imagesLoaded === imageSources.length) {
+    // All images have been loaded
+    console.log('All images loaded');
+    // You can perform any additional actions here
+  }
+}
+
+for (var i = 0; i < imageSources.length; i++) {
+  loadImageAsync(imageSources[i], function(error, img) {
+    if (error) {
+      console.error(error);
+    } else {
+      loadedImages.push(img);
+    }
+    checkAllImagesLoaded();
+  });
+}
