@@ -149,7 +149,7 @@ p {
   font-size: 40px;
   margin-right: 20px;
   /* Add margin between subheading and title */
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   -webkit-animation: fade linear both;
   animation: fade linear both;
   animation-timeline: view();
@@ -182,13 +182,14 @@ p {
 .b.title {
   font-family: 'East';
   font-size: 180px;
+  margin-left: 33px;
 }
 
 
 .profile-picture {
   position: relative;
   margin: 0 auto;
-  margin-right: 5%;
+  margin-right: 7%;
   margin-left: 50px;
   width: 482px;
   min-width: 482px;
@@ -303,14 +304,14 @@ p {
 
 
 .b.title:hover {
-  text-shadow: -4px 4px #ef3550,
-  -8px 8px #f48fb1,
-  -16px 16px #2196f3,
-  -20px 20px #26c6da,
-  -24px 24px #43a047,
+  text-shadow: -4px 4px #cb475b,
+  -8px 8px #e089c7,
+  -16px 16px #61b5fa,
+  -20px 20px #7d4fe0,
+  -24px 24px #37833a,
   -28px 28px #eeff41,
-  -12px 12px #7e57c2,
+  -12px 12px #a682e2,
   -32px 32px #f9a825,
-  -36px 36px #ff5722;
+  -36px 36px #ce461d;
 }
 
