@@ -304,14 +304,14 @@ p {
 
 
 .b.title:hover {
-  text-shadow: -4px 4px #ff3553,
-  -8px 8px #e089c7,
-  -16px 16px #61b5fa,
-  -20px 20px #7d4fe0,
-  -24px 24px #37833a,
-  -28px 28px #eeff41,
-  -12px 12px #a682e2,
-  -32px 32px #f9a825,
-  -36px 36px #ce461d;
-}
 
+  text-shadow: -4px 4px #fd5103,
+    -8px 8px #e5ba21,
+    -16px 16px #ccf944,
+    -20px 20px #d22cb4,
+    -24px 24px #fbe98f,
+    -28px 28px #2da053,
+    -12px 12px #f09400,
+    -32px 32px #40b1e9,
+    -36px 36px #dc1fe2;
+}
