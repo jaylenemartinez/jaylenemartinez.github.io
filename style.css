@@ -149,7 +149,7 @@ p {
   font-size: 40px;
   margin-right: 20px;
   /* Add margin between subheading and title */
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   -webkit-animation: fade linear both;
   animation: fade linear both;
   animation-timeline: view();
@@ -188,13 +188,13 @@ p {
 .profile-picture {
   position: relative;
   margin: 0 auto;
-  margin-right: 7%;
+  margin-right: 5%;
   margin-left: 50px;
   width: 482px;
   min-width: 482px;
   height: 556px;
   overflow: hidden;
-  background: url('images/profilewithbackground3.png');
+  background: url('images/normalprofile.png');
   transition: filter 1s ease;
   /* Smooth transition for the filter property */
   -webkit-animation: fade linear both;
@@ -205,7 +205,7 @@ p {
 
 ::selection {
   color: #fff;
-  text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+  text-shadow: 1px 1px 10px #698bb9, 1px 1px 10px #fff;
   text-align: center;
 }
 
@@ -288,3 +288,29 @@ p {
   color: #fff;
   scroll-snap-align: start;
 }
+
+.a.title:hover {
+  color: #000000;
+  text-shadow: 1px 1px 10px #04ff21, 1px 1px 10px #fff;
+  text-align: center;
+}
+
+.c.title:hover {
+  color: #fff;
+  text-shadow: 1px 1px 10px #000000, 1px 1px 10px #721717;
+  text-align: center;
+}
+
+
+.b.title:hover {
+  text-shadow: -4px 4px #ef3550,
+  -8px 8px #f48fb1,
+  -16px 16px #2196f3,
+  -20px 20px #26c6da,
+  -24px 24px #43a047,
+  -28px 28px #eeff41,
+  -12px 12px #7e57c2,
+  -32px 32px #f9a825,
+  -36px 36px #ff5722;
+}
+
