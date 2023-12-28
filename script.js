@@ -6,7 +6,7 @@ const handleIntersection = (entries) => {
       $(document).ready(function() {
         $(".title.b").hover(
           function() {
-            $(".intro-container .profile-picture").css("background", "url('images/artistprofile4.png')");
+            $(".intro-container .profile-picture").css("background", "url('images/artistprofile5.png')");
           },
           function() {
             $(".intro-container .profile-picture").css("background", "url('images/normalprofile.png')");
